@@ -1,0 +1,223 @@
+/*-------------------------------------------------------------- LET'S START ---------------------------------------------------------*/
+
+/*------------------------------- FONTS THAT INCLUDED ------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+@font-face {
+	font-family: 'LEMON MILK';
+	src: url('../fonts/LEMONMILK-Bold.woff2') format('woff2'), url('../fonts/LEMONMILK-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+/*-------------------- CONSULTING - ENGINEERING - COMMUNICATION -------------------*/
+
+.hero {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background: #005c97;
+	background: -webkit-linear-gradient(to right, #005c97, #363795);
+	background: linear-gradient(to right, #005c97, #363795);
+}
+.overlay-services {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 200px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background: black;
+	opacity: 0.8;
+}
+.hero:before {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.65) 100%);
+	z-index: 0;
+	opacity: 0.4;
+}
+.hero h1 {
+	padding-bottom: 2em;
+	width: 50%;
+	min-width: 190px;
+	position: absolute;
+	bottom: 0
+}
+.hero a {
+	text-decoration: none;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+	background: #fff;
+	padding: 0.12em 0.5em;
+	font-size: calc(1vw + 1vh + 3.5vmin);
+	line-height: calc(1vw + 1vh + 6.5vmin);
+	color: #000;
+	text-transform: uppercase;
+	mix-blend-mode: screen;
+	transition: all 0.4s;
+	font-family: 'LEMON MILK';
+}
+.hero a:hover {
+	line-height: 1.3em;
+}
+.hero img {
+	width: 600px;
+	overflow: hidden;
+}
+.content-area {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.content-area p {
+	font-size: 1.6rem;
+	font-family: 'Poppins', sans-serif;
+	color: #111;
+}
+.content-area img {
+	width: 500px;
+	padding: 20px;
+}
+.mobile-heading {
+	font-size: 2.5rem;
+	font-family: 'LEMON MILK';
+	color: #111;
+	padding-left: 12px;
+	padding-bottom: 14px;
+	display: none;
+}
+.benefits {
+	text-align: center;
+	overflow: hidden;
+}
+.benefits p {
+	padding: 15px;
+	font-size: 1.6rem;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	list-style: none;
+	background: #0093D1;
+	margin: 2px;
+}
+@media screen and (max-width:2500px) {
+	.hero {
+		height: 500px;
+	}
+	.hero img {
+		width: 700px;
+		overflow: hidden;
+	}
+	#communication-img {
+		width: 600px;
+		overflow: hidden;
+	}
+	.hero h1 {
+		padding-left: 2.5rem;
+	}
+	.hero a {
+		font-size: calc(.7vw + .7vh + 2.4vmin);
+		line-height: calc(1vw + 1vh + 6.5vmin);
+		padding: 0.2em 0.5em;
+	}
+	.content-area img {
+		width: 560px;
+		padding: 20px;
+	}
+}
+@media screen and (max-width:1920px) {
+	.hero {
+		height: 500px;
+	}
+	.hero img {
+		width: 700px;
+		overflow: hidden;
+	}
+	#communication-img {
+		width: 560px;
+		overflow: hidden;
+	}
+	.hero h1 {
+		padding-left: 2.5rem;
+	}
+	.hero a {
+		font-size: calc(.7vw + .7vh + 2.4vmin);
+		line-height: calc(1vw + 1vh + 6.5vmin);
+		padding: 0.2em 0.5em;
+	}
+}
+@media screen and (max-width:1366px) {
+	.content-area {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.hero {
+		height: 350px;
+	}
+	.hero img {
+		width: 600px;
+		overflow: hidden;
+	}
+	#communication-img {
+		width: 490px;
+		overflow: hidden;
+	}
+	.hero h1 {
+		padding-bottom: 4em;
+		padding-left: .5em;
+	}
+	.hero a {
+		font-size: calc(.8vw + .8vh + 3vmin);
+		line-height: calc(1vw + 1vh + 6.5vmin);
+		padding: 0.3em 0.5em;
+	}
+	.content-area img {
+		width: 510px;
+		padding: 20px;
+	}
+}
+@media screen and (max-width:1024px) {
+	.hero a {
+		font-size: calc(.6vw + .6vh + 2.3vmin);
+	}
+}
+@media screen and (max-width:991px) {
+	.mobile-heading {
+		display: block;
+	}
+	.content-area {
+		margin: 0 auto;
+	}
+	.content-area img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media screen and (max-width:768px) {
+	.hero h1 {
+		padding-bottom: .6em;
+	}
+	.hero {
+		height: 220px;
+	}
+	.content-area img {
+		width: 280px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
